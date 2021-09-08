@@ -5,7 +5,7 @@ FROM node:carbon
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-# Install app dependencies
+# Install app dependenciess
 #http://bitjudo.com/blog/2014/03/13/building-efficient-dockerfiles-node-dot-js/
 COPY package.json /usr/src/app/
 RUN npm install --production
